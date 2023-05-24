@@ -9,7 +9,7 @@ void handle_sigint(int sig)
 {
 (void)sig;
 _putstr("\n");
-_putstr("(₦) ");
+_putstr("#shell$ ");
 fflush(stdout);
 }
 
