@@ -8,10 +8,11 @@ char *_getline()
 {
 char *input = NULL;
 size_t len = 0;
+
 if (getline(&input, &len, stdin) == -1)
 {
 free(input);
-exit(EXIT_FAILURE);
+exit(0);
 }
 return (input);
 }
