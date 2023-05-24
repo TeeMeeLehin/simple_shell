@@ -20,7 +20,7 @@ int _strncmp(char *str1, char *str2, int n);
 void _concatpro(char *out, char *in);
 void _strcopy(char *dest, const char *src);
 char *check_command(char *cmd);
-char *_getline();
+char *_getline(int status);
 void tokenizer(char *input, char *inputs[]);
 int execute_cmd(char *inputs[], char *argv[]);
 void handle_sigint(int sig);

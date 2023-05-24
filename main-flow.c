@@ -2,9 +2,10 @@
 
 /**
 * _getline - function to read input from stdin
+* @status: status value
 * Return: the input string
 */
-char *_getline()
+char *_getline(int status)
 {
 char *input = NULL;
 size_t len = 0;
@@ -12,7 +13,7 @@ size_t len = 0;
 if (getline(&input, &len, stdin) == -1)
 {
 free(input);
-exit(0);
+exit(status);
 }
 return (input);
 }
