@@ -9,7 +9,7 @@ void handle_sigint(int sig)
 {
 (void)sig;
 _putstr("\n");
-_putstr("#shell$ ");
+_putstr("$ ");
 fflush(stdout);
 }
 
@@ -23,4 +23,3 @@ void handle_sigquit(int sig)
 (void)sig;
 exit(EXIT_SUCCESS);
 }
-

@@ -21,7 +21,7 @@ char *input;
 int is_interactive = isatty(STDIN_FILENO);
 if (is_interactive)
 {
-_putstr("#shell$ ");
+_putstr("$ ");
 fflush(stdout);
 }
 input = _getline();
