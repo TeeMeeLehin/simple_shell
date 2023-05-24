@@ -12,7 +12,6 @@ int status;
 int loop = 1;
 
 signal(SIGINT, handle_sigint);
-signal(SIGQUIT, handle_sigquit);
 
 while (loop)
 {

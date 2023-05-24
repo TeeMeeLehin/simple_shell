@@ -7,24 +7,7 @@
 */
 int _putchar(char c)
 {
-return (write(1, &c, 1));
-}
-
-/**
-* _putint - function to write an integer to terminal
-* @n: the integer
-* Return: zero
-*/
-int _putint(int n)
-{
-int len = 0;
-if (n / 10 != 0)
-{
-len += _putint(n / 10);
-}
-len += 1;
-write(1, &"0123456789"[n % 10], 1);
-return (len);
+return (write(STDOUT_FILENO, &c, 1));
 }
 
 /**

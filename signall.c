@@ -12,14 +12,3 @@ _putstr("\n");
 _putstr("$ ");
 fflush(stdout);
 }
-
-/**
-* handle_sigquit - function to handle Ctrl D
-* @sig: signal
-* Return: void
-*/
-void handle_sigquit(int sig)
-{
-(void)sig;
-exit(EXIT_SUCCESS);
-}
